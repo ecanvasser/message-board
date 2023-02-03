@@ -6,7 +6,7 @@
   </head>
   <body class="h-screen flex flex-col items-center mt-20">
     <div class="text-4xl">Messages</div>
-    <div id="msg-container" class="flex flex-col gap-4 mt-5">
+    <div id="msg-container" class="flex flex-col gap-4 mt-8">
       <% for(let i = 0; i < messages.length; i++) {%>
       <div id="msg-details">
         <div><%= messages[i].text %></div>
@@ -15,5 +15,6 @@
       </div>
       <%} %>
     </div>
+    <a href="/new" class="mt-8 bg-black text-white py-2 px-3">Add Message</a>
   </body>
 </html>
